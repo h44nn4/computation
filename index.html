@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test</title>
+  <style>
+    body, html {
+      margin: 0;
+      height: 100%;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+    .animated-image {
+      width: 640px;
+      height: 400px;
+      background-image: url('image1-1.png');
+      background-size: cover;
+      animation: swap 1s infinite;
+    }
+    @keyframes swap {
+      0%, 100% {
+        background-image: url('image1-1.png');
+      }
+      50% {
+        background-image: url('image2-1.png');
+      }
+    }
+  </style>
+</head>
+<body>
+    <a href="page2.html">
+  <div class="animated-image"></div>
+</a>
+</body>
+</html>
